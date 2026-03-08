@@ -4,15 +4,15 @@
    ============================================ */
 
 :root {
-  /* Primary — MCSA Red */
-  --color-primary: #C60303;
-  --color-primary-dark: #9B0202;
-  --color-primary-light: #E83A3A;
+  /* Primary — Navy (main brand feel) */
+  --color-primary: #1E3A5F;
+  --color-primary-dark: #142A45;
+  --color-primary-light: #2D5A8E;
 
-  /* Secondary — Warm accent */
-  --color-accent: #1E3A5F;
-  --color-accent-dark: #142A45;
-  --color-accent-light: #2D5A8E;
+  /* Accent — MCSA Red (used sparingly) */
+  --color-accent: #C60303;
+  --color-accent-dark: #9B0202;
+  --color-accent-light: #E83A3A;
 
   /* Warm neutrals */
   --color-bg: #FDFBF7;
@@ -196,18 +196,12 @@ img { max-width: 100%; height: auto; display: block; }
 .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
 
 .nav-cta {
-  background: var(--color-primary);
-  color: white !important;
-  padding: 0.5rem 1.25rem;
-  border-radius: var(--radius-full);
+  color: var(--color-primary) !important;
   font-weight: 600;
   font-size: 0.9rem;
-  transition: background var(--duration) var(--ease), transform var(--duration) var(--ease);
 }
 .nav-cta:hover {
-  background: var(--color-primary-dark);
-  color: white !important;
-  transform: translateY(-1px);
+  color: var(--color-accent) !important;
 }
 .nav-cta::after { display: none !important; }
 
@@ -355,7 +349,7 @@ section { padding: 5rem 0; }
 .section-dark { background: var(--color-accent); color: white; }
 .section-dark h2, .section-dark h3, .section-dark h4 { color: white; }
 .section-dark p { color: rgba(255,255,255,0.85); }
-.section-primary { background: var(--color-primary); color: white; }
+.section-primary { background: var(--color-accent); color: white; }
 .section-primary h2, .section-primary h3 { color: white; }
 
 .section-header {
@@ -376,7 +370,7 @@ section { padding: 5rem 0; }
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-primary);
+  color: var(--color-accent);
   margin-bottom: 0.75rem;
 }
 .section-dark .section-label { color: rgba(255,255,255,0.6); }
@@ -395,7 +389,7 @@ section { padding: 5rem 0; }
 .card-icon {
   width: 56px;
   height: 56px;
-  background: rgba(198, 3, 3, 0.08);
+  background: rgba(30, 58, 95, 0.08);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
@@ -421,7 +415,7 @@ section { padding: 5rem 0; }
 
 /* ---- Service Times Banner ---- */
 .service-banner {
-  background: var(--color-primary);
+  background: var(--color-accent);
   color: white;
   padding: 1.5rem 0;
   text-align: center;
@@ -516,7 +510,7 @@ section { padding: 5rem 0; }
 
 .stat h3 {
   font-size: clamp(2rem, 4vw, 3rem);
-  color: var(--color-primary);
+  color: white;
   margin-bottom: 0.25rem;
 }
 .stat p { color: var(--color-text-light); font-size: 0.95rem; }
@@ -790,12 +784,12 @@ section { padding: 5rem 0; }
   padding: 2rem;
   box-shadow: var(--shadow-sm);
   border: 1px solid var(--color-border);
-  border-left: 4px solid var(--color-primary);
+  border-left: 4px solid var(--color-accent);
 }
 .notice-card .notice-date {
   font-size: 0.8rem;
   font-weight: 600;
-  color: var(--color-primary);
+  color: var(--color-accent);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 0.5rem;
@@ -855,6 +849,6 @@ section { padding: 5rem 0; }
 }
 .timeline-year {
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--color-accent);
   font-size: 1.1rem;
 }
