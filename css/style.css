@@ -513,7 +513,7 @@ section { padding: 5rem 0; }
   color: white;
   margin-bottom: 0.25rem;
 }
-.stat p { color: var(--color-text-light); font-size: 0.95rem; }
+.stat p { color: rgba(255,255,255,0.85); font-size: 0.95rem; }
 
 /* ---- Testimonial ---- */
 .testimonial-card {
@@ -645,7 +645,7 @@ section { padding: 5rem 0; }
 
 /* ---- Footer ---- */
 .footer {
-  background: var(--color-primary-dark);
+  background: #142A45;
   color: rgba(255,255,255,0.85);
   padding: 4rem 0 0;
 }
