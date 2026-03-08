@@ -262,8 +262,8 @@ img { max-width: 100%; height: auto; display: block; }
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(30, 58, 95, 0.85) 0%,
-    rgba(198, 3, 3, 0.6) 100%
+    rgba(30, 58, 95, 0.88) 0%,
+    rgba(20, 42, 69, 0.8) 100%
   );
   z-index: 1;
 }
@@ -331,10 +331,10 @@ img { max-width: 100%; height: auto; display: block; }
 .btn-outline:hover { background: rgba(255,255,255,0.1); color: white; border-color: white; }
 
 .btn-secondary {
-  background: var(--color-accent);
+  background: var(--color-primary);
   color: white;
 }
-.btn-secondary:hover { background: var(--color-accent-dark); color: white; transform: translateY(-2px); }
+.btn-secondary:hover { background: var(--color-primary-dark); color: white; transform: translateY(-2px); }
 
 .btn-whatsapp {
   background: #25D366;
@@ -346,10 +346,10 @@ img { max-width: 100%; height: auto; display: block; }
 section { padding: 5rem 0; }
 .section-light { background: var(--color-bg); }
 .section-surface { background: var(--color-surface); }
-.section-dark { background: var(--color-accent); color: white; }
+.section-dark { background: var(--color-primary); color: white; }
 .section-dark h2, .section-dark h3, .section-dark h4 { color: white; }
 .section-dark p { color: rgba(255,255,255,0.85); }
-.section-primary { background: var(--color-accent); color: white; }
+.section-primary { background: var(--color-primary); color: white; }
 .section-primary h2, .section-primary h3 { color: white; }
 
 .section-header {
@@ -645,7 +645,7 @@ section { padding: 5rem 0; }
 
 /* ---- Footer ---- */
 .footer {
-  background: var(--color-accent-dark);
+  background: var(--color-primary-dark);
   color: rgba(255,255,255,0.85);
   padding: 4rem 0 0;
 }
@@ -798,7 +798,7 @@ section { padding: 5rem 0; }
 /* ---- Page Header (inner pages) ---- */
 .page-header {
   padding: 8rem 0 4rem;
-  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   color: white;
   text-align: center;
 }
